@@ -54,3 +54,76 @@ async def get_book(book_id: int, data: Annotated[str, Depends(read_books_json)])
     # TO DO: Return the book with the given {book_id} if it exists, or return an error message otherwise
     pass
 ```
+
+# Challenge 03
+
+
+**Challenge:**
+
+You are building an API for a library management system. The system has the following features:
+- Each book has a unique ID, title, author, and publication year.
+- Users can search books by their titles or authors.
+
+Your task is to create two endpoints in your FastAPI application:
+1.  `/books`: This endpoint should return all available books as JSON data.
+2.  `/search?q=<query>`: This endpoint should allow users to search for books based on either the title or author of a book. The query parameter will contain the user's search term.
+
+**Requirements:**
+
+- Both endpoints must be implemented using FastAPI and its dependencies (e.g., `json`).
+- In the `/books` endpoint, you need to read JSON data from a file named `books.json`. This file contains all available books in the following format:
+```json
+[
+    {
+        "id": 1,
+        "title": "Book A",
+        "author": "Author A",
+        "year": 2020
+    },
+    {
+        "id": 2,
+        "title": "Book B",
+        "author": "Author B",
+        "year": 2019
+    }
+]
+```
+- In the `/search?q=<query>` endpoint, you need to implement a search function that finds books based on either their titles or authors. The query parameter will contain the user's search term.
+- If no book matches the given query, return an error message with HTTP status code 404 (Not Found).
+- You can use any Python libraries and modules as needed.
+
+**Example Output:**
+
+When a user requests `/books`, your API should return all available books in JSON format:
+```json
+[
+    {
+        "id": 1,
+        "title": "Book A",
+        "author": "Author A",
+        "year": 2020
+    },
+    {
+        "id": 2,
+        "title": "Book B",
+        "author": "Author B",
+        "year": 2019
+    }
+]
+```
+When a user requests `/search?q=<query>`, your API should return all books that match the given query. For example, if the query is `A`, your API might return:
+```json
+[
+    {
+        "id": 1,
+        "title": "Book A",
+        "author": "Author A",
+        "year": 2020
+    }
+]
+```
+
+
+**Your Task:**
+
+Write a FastAPI application that meets these requirements. You can use any Python libraries and modules as needed.
