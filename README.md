@@ -127,3 +127,22 @@ When a user requests `/search?q=<query>`, your API should return all books that 
 **Your Task:**
 
 Write a FastAPI application that meets these requirements. You can use any Python libraries and modules as needed.
+
+Let's start with a simple algorithm question. I'll give you the problem, and then we can go through it together.
+
+# Challenge 04
+
+**Problem:** Reverse Linked List
+
+Given a singly linked list, write an algorithm to reverse the order of its nodes.
+
+For example, if the input is:
+
+1 -> 2 -> 3 -> 4 -> 5
+The output should be:
+5 -> 4 -> 3 -> 2 -> 1
+
+**Constraints:**
+
+* You can only use a single pointer (or variable) to keep track of the current node.
+* You cannot create any new nodes or modify existing ones other than reversing their order.
