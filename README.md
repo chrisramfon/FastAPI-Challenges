@@ -177,3 +177,6 @@ For example:
 * `[1, 2]` is a subset of `[1, 2, 3, 4]`
 * `[1, 2, 3]` is not a subset of `[1, 2, 3, 4]`
 
+# Challenge 08
+
+## Bubble sort
