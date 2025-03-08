@@ -146,3 +146,8 @@ The output should be:
 
 * You can only use a single pointer (or variable) to keep track of the current node.
 * You cannot create any new nodes or modify existing ones other than reversing their order.
+
+# Challenge 05
+
+Write a function `reverse_string(s)` that takes a string as input and returns the reversed string. For example, if the input is `"hello"`, the output should be `"olleh"`.
+
