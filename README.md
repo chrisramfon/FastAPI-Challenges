@@ -151,3 +151,17 @@ The output should be:
 
 Write a function `reverse_string(s)` that takes a string as input and returns the reversed string. For example, if the input is `"hello"`, the output should be `"olleh"`.
 
+# Challenge 06
+
+**Exercise 2: Find the First Duplicate**
+
+Write a function `find_first_duplicate(arr)` that takes an array of integers as input and returns the first duplicate element in the array. If no duplicates are found, return -1 (or any other value you prefer).
+
+For example:
+```python
+arr = [1, 2, 3, 4, 5]
+print(find_first_duplicate(arr))  # Output: None (-1)
+
+arr = [1, 2, 3, 4, 2]  # Duplicate found!
+print(find_first_duplicate(arr))  # Output: 2
+```
