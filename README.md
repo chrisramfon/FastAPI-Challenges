@@ -165,3 +165,15 @@ print(find_first_duplicate(arr))  # Output: None (-1)
 arr = [1, 2, 3, 4, 2]  # Duplicate found!
 print(find_first_duplicate(arr))  # Output: 2
 ```
+
+# Challenge 07
+
+**Practice Problem 2:**
+
+Write a function that takes two lists of integers as input and returns `True` if one list is a subset of another, and `False` otherwise. A subset means that all elements in the first list are present in the second list, possibly with duplicates.
+
+For example:
+
+* `[1, 2]` is a subset of `[1, 2, 3, 4]`
+* `[1, 2, 3]` is not a subset of `[1, 2, 3, 4]`
+
